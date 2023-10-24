@@ -10,9 +10,7 @@ const MeetAhead = () => {
         <h1>Meet the ahead app</h1>
       </div>
       <div className={styles.body}>
-        <div className={styles.img}>
-          <Image src={images.ahead} alt="meet" />
-        </div>
+        <div className={styles.left}></div>
         <div className={styles.content}>
           A personalized pocket coach that provides bite-sized science driver
           tools to boost emotional intelligence and mental well-being.
@@ -23,8 +21,16 @@ const MeetAhead = () => {
         </div>
       </div>
       {/* SHAPES */}
+      <div className={styles.img}>
+        <Image src={images.ghost} alt="ghost" className={styles.ghost} />
+      </div>
       <div className={styles.circle1} />
+      <div className={styles.leaf1} />
+      <div className={styles.leaf2} />
       <div className={styles.circle2} />
+      <div className={styles.dot}>
+        <div className={styles.inside_dot} />
+      </div>
     </div>
   );
 };

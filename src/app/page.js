@@ -12,6 +12,7 @@ export default function Home() {
       <EQBeats />
       <Sounds />
       <MeetAhead />
+      <EQBeats />
     </div>
   );
 }

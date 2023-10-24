@@ -6,6 +6,7 @@
     height: 100%;
     width: 100%;
     padding: 4rem;
+    gap: 4rem;
     background-color: #fef7f1;
     border-radius: 2.8rem;
     position: relative;
@@ -36,7 +37,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 6rem;
+        gap: 2rem;
+        height: 100%;
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -46,6 +48,17 @@
             font-weight: 400;
             line-height: 2rem;
             color: #636363;
+            min-height: 16rem;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            min-width: 45%;
+            z-index: 1;
+            height: 100%;
         }
     }
 
@@ -53,13 +66,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 15rem;
-        height: 15rem;
+        width: 16rem;
+        height: 16rem;
         border-radius: 50%;
         background-color: #fbe3d2;
         position: absolute;
-        bottom: 1%;
-        left: -1%;
+        top: 65%;
+        left: 2%;
         transform: translate(-50%, -50%);
     }
 
@@ -67,13 +80,85 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
-        background-color: #7a99d1;
+        background-color: #f3c7c8;
         position: absolute;
-        bottom: 25%;
-        left: 25%;
+        bottom: 35%;
+        left: 33%;
         transform: translate(-50%, -50%);
+    }
+
+    .leaf1 {
+        position: absolute;
+        bottom: 26%;
+        left: 29%;
+        z-index: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 0 100px;
+        background-color: #32cd32;
+        transform: rotate(0deg);
+    }
+
+    .leaf2 {
+        position: absolute;
+        top: 12%;
+        right: 12%;
+        z-index: 0;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 0 100px;
+        background-color: #32cd32;
+        transform: rotate(0deg);
+    }
+
+    .img {
+        position: absolute;
+
+        left: 11%;
+        top: 41%;
+        height: 10rem;
+        width: 10rem;
+        z-index: 300;
+
+        padding: 0.8rem;
+        border-radius: 50%;
+        background-color: #fff;
+
+        // SET OUTLINE WIDTH AND COLOR
+        outline: 1rem solid #f6f6f6;
+
+        .ghost {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #f7d4bc;
+        position: absolute;
+        bottom: 15%;
+        left: 27%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inside_dot {
+            width: 1rem;
+            height: 1rem;
+            background-color: #eb695b;
+            border-radius: 50%;
+        }
     }
 }
