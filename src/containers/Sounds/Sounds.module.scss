@@ -1,0 +1,32 @@
+.sound {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .header {
+        padding: 2.4rem 3.2rem;
+
+        h1 {
+            font-size: 2.8rem;
+            color: #171717;
+        }
+    }
+
+    .cards {
+        width: 100%;
+        gap: 1.2rem;
+        margin: 1.6rem 0;
+        height: 16rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: scroll;
+        gap: 2rem;
+
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
