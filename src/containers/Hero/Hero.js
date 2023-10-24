@@ -1,20 +1,27 @@
+import { images } from "@/constants";
 import styles from "./Hero.module.scss";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.content}>
-        <h1>Hero</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptate, voluptatum, quos, quibusdam dolorum vero quia voluptatem
-          quae repellat voluptatibus culpa. Quisquam voluptate, voluptatum,
-          quos, quibusdam dolorum vero quia voluptatem quae repellat
-          voluptatibus culpa.
-        </p>
+        <p className={styles.tag_line}>Ahead app</p>
+        <h1 className={styles.title}>
+          Master your life <br /> by mastering <br />
+          emotions
+        </h1>
+        <div className={styles.action}>
+          <Image src={images.app_store} alt="app" />
+
+          <div className={styles.ratings}>
+            <div className={styles.stars}>⭐⭐⭐⭐</div>
+            <p className={styles.sub_title}>100+ App store reviews</p>
+          </div>
+        </div>
       </div>
       <div className={styles.img}>
-        <img />
+        <Image src={images.ahead} alt="hero" />
       </div>
     </div>
   );
