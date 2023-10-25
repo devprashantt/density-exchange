@@ -37,3 +37,28 @@
         line-height: 1.4rem;
     }
 }
+
+.text {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.6rem 1.6rem;
+    gap: 0.8rem;
+    background-color: #fff;
+    border-radius: 1.6rem;
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        color: #636363;
+    }
+}
