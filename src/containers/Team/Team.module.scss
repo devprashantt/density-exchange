@@ -1,0 +1,76 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #edf8fe;
+    padding: 4rem;
+    border-radius: 2.4rem;
+
+    .sub_heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .heading {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .steps {
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .line {
+            width: 100%;
+            height: 0.2rem;
+
+            background-color: #f0ede0;
+
+            position: absolute;
+            z-index: 1;
+
+            outline: none;
+            border: none;
+        }
+
+        .badge {
+            width: 4rem;
+            height: 4rem;
+            z-index: 999;
+        }
+    }
+
+    .steps_content {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.4rem;
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-align: center;
+            color: #000;
+            width: 30%;
+        }
+    }
+
+    .timeline {
+        margin-top: 4rem;
+        width: 60%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+}

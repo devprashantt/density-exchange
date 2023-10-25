@@ -6,7 +6,10 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <hr className={styles.border} />
-      <Image src={images.ahead} alt="EQBeats" className={styles.img} />
+      <div className={styles.logo}>
+        <Image src={images.ahead} alt="EQBeats" className={styles.img} />
+        <Image src={images.ahead_text} alt="EQBeats" className={styles.text} />
+      </div>
       <div className={styles.socials}>
         <div className={styles.social}>
           <div className={styles.icon}></div>

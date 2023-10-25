@@ -10,6 +10,7 @@ import {
   Test,
   Work,
   Vacancies,
+  Team,
 } from "@/containers";
 import { Navbar } from "@/components";
 
@@ -23,7 +24,7 @@ export default function Home() {
       <MeetAhead />
       {/* TIMELINE */}
       <EQBeats />
-      {/* TEAM */}
+      <Team />
       <Test />
       <Work />
       <Vacancies />

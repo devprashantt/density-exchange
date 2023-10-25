@@ -6,5 +6,16 @@ import Footer from "./Footer/Footer";
 import Test from "./Test/Test";
 import Work from "./Work/Work";
 import Vacancies from "./Vacancies/Vacancies";
+import Team from "./Team/Team";
 
-export { Hero, EQBeats, Sounds, MeetAhead, Footer, Test, Work, Vacancies };
+export {
+  Hero,
+  EQBeats,
+  Sounds,
+  MeetAhead,
+  Footer,
+  Test,
+  Work,
+  Vacancies,
+  Team,
+};
