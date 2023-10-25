@@ -23,7 +23,7 @@ const emoji = [
     heading: "You get a promotional work",
     desc: "You question yourself and wonder when they will realize you are unqualified imposter instead of finding yourself & your abilities.",
     color: "#6341EF",
-    rotation: -2,
+    rotation: -4,
     text: "#ffffff",
   },
   {

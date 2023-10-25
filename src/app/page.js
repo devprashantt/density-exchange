@@ -9,6 +9,7 @@ import {
   Footer,
   Test,
   Work,
+  Vacancies,
 } from "@/containers";
 import { Navbar } from "@/components";
 
@@ -20,9 +21,12 @@ export default function Home() {
       <EQBeats />
       <Sounds />
       <MeetAhead />
+      {/* TIMELINE */}
       <EQBeats />
-      <Work />
+      {/* TEAM */}
       <Test />
+      <Work />
+      <Vacancies />
       <Footer />
     </div>
   );

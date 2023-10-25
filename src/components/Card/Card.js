@@ -45,7 +45,7 @@ const Card = ({
               <li key={index}>{bullet}</li>
             ))}
           </ul>
-          <Button text="See details" />
+          <Button text="See details" customClass={styles.btn} />
         </div>
       );
     default:
