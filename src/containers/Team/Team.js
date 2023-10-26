@@ -9,6 +9,10 @@ const Team = () => {
     hidden: { scale: 0 },
     visible: { scale: 1, transition: { duration: 1 } },
   };
+  const textVariants = {
+    hidden: { scale: 0 },
+    visible: { scale: 1, transition: { duration: 1 } },
+  };
   return (
     <section className={styles.team}>
       <p className={styles.sub_heading}>
@@ -46,13 +50,30 @@ const Team = () => {
         </motion.div>
       </div>
       <div className={styles.steps_content}>
-        <p className={styles.text}>Answer question on your social network</p>
-        <p className={styles.text}>
+        <motion.p
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className={styles.text}
+        >
+          Answer question on your social network
+        </motion.p>
+        <motion.p
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className={styles.text}
+        >
           Let other anonymous users know that you are on the platform
-        </p>
-        <p className={styles.text}>
+        </motion.p>
+        <motion.p
+          variants={textVariants}
+          initial="hidden"
+          animate="visible"
+          className={styles.text}
+        >
           Find out where you are on your social network and connect with others
-        </p>
+        </motion.p>
       </div>
       <div className={styles.timeline}>
         <Timeline type="team" />

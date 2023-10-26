@@ -42,7 +42,12 @@ const MeetAhead = () => {
   };
 
   return (
-    <section className={styles.meet}>
+    <motion.section
+      variants={containerVariants}
+      initial="initial"
+      animate="animate"
+      className={styles.meet}
+    >
       <div className={styles.header}>
         <motion.p variants={headerVariants}>Built out of frustration</motion.p>
         <motion.h1 variants={headerVariants}>Meet the ahead app</motion.h1>
@@ -78,7 +83,7 @@ const MeetAhead = () => {
       <motion.div className={styles.dot}>
         <div className={styles.inside_dot} />
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

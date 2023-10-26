@@ -31,21 +31,3 @@
         }
     }
 }
-
-@media screen and (max-width: 768px) {
-    .sound {
-        .header {
-            padding: 2.4rem 1.6rem;
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-        .cards {
-            height: 12rem;
-            gap: 1rem;
-            padding: 0 1.6rem;
-        }
-    }
-}
