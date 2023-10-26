@@ -2,6 +2,7 @@ import styles from "./Team.module.scss";
 import Image from "next/image";
 import { Timeline } from "@/components";
 import { images } from "@/constants";
+import { motion } from "framer-motion";
 
 const Team = () => {
   return (

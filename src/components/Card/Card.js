@@ -18,7 +18,7 @@ const Card = ({
           className={styles.emoji}
           style={{
             backgroundColor: color,
-            transform: `rotate(${rotation}deg);`,
+            transform: `rotate(${rotation}deg)`,
             color: text,
           }}
         >

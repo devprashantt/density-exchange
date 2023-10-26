@@ -1,7 +1,7 @@
 import "./globals.scss";
 
 export const metadata = {
-  title: "Ahead App - The pocket coach to stay on top your emotions",
+  title: "Ahead App - The pocket coach of your emotions",
   description: "Density app task",
 };
 

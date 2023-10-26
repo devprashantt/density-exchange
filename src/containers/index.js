@@ -7,6 +7,7 @@ import Test from "./Test/Test";
 import Work from "./Work/Work";
 import Vacancies from "./Vacancies/Vacancies";
 import Team from "./Team/Team";
+import Improvement from "./Improvement/Improvement";
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   Work,
   Vacancies,
   Team,
+  Improvement,
 };

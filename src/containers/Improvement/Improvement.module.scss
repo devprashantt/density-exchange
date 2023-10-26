@@ -1,0 +1,176 @@
+.improve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 2rem 4rem;
+
+    .header {
+        width: 100%;
+        position: relative;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0.8rem;
+            width: 100%;
+
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #636363;
+                line-height: 1.6rem;
+            }
+        }
+
+        .ghost {
+            position: absolute;
+
+            height: 8rem;
+            width: 8rem;
+
+            top: -1.4rem;
+            right: 40%;
+        }
+    }
+
+    .timeline::-webkit-scrollbar {
+        display: none;
+    }
+
+    // MAKE SCROLL SMOOTH
+    .timeline {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 24rem;
+        overflow-y: scroll;
+        padding: 8rem 0rem 0 2rem;
+
+        width: 60%;
+
+        .card {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2rem;
+            height: 100%;
+
+            .line {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: #cdc2fa;
+                min-height: 8rem;
+                width: 4px;
+
+                .circle {
+                    position: absolute;
+                    background-color: #cdc2fa;
+                    height: 0.8rem;
+                    width: 0.8rem;
+                    border-radius: 50%;
+                    top: 0;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 0.8rem;
+                width: 100%;
+
+                padding-bottom: 2rem;
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: #636363;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #636363;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+
+        .card_active {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2rem;
+            height: 100%;
+
+            .line {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                background: rgb(99, 65, 239);
+                background: linear-gradient(
+                    183deg,
+                    rgba(99, 65, 239, 1) 0%,
+                    rgba(146, 120, 254, 1) 47%,
+                    rgba(181, 166, 242, 1) 100%
+                );
+
+                min-height: 8rem;
+                width: 4px;
+
+                .circle {
+                    position: absolute;
+                    background-color: #6341ef;
+                    height: 0.8rem;
+                    width: 0.8rem;
+                    border-radius: 50%;
+                    top: 0;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 0.8rem;
+                width: 100%;
+
+                padding-bottom: 2rem;
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #636363;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+    }
+}
