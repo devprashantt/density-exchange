@@ -162,3 +162,29 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .meet {
+        padding: 2rem 1.6rem;
+        margin: 2rem 0;
+
+        .header {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .body {
+            flex-direction: column;
+            gap: 2rem;
+
+            .left {
+                min-width: 100%;
+            }
+        }
+    }
+}

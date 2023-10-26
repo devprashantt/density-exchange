@@ -57,3 +57,32 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .test {
+        margin: 2rem;
+
+        .para1 {
+            font-size: 1rem;
+        }
+
+        .para2 {
+            font-size: 1.4rem;
+        }
+
+        .para3 {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+
+        .para4 {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+
+        .para5 {
+            font-size: 0.8rem;
+            max-width: 100%;
+        }
+    }
+}

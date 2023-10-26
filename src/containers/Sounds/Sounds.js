@@ -19,7 +19,7 @@ const Sounds = () => {
   };
 
   return (
-    <section className={styles.sounds}>
+    <section className={styles.sound}>
       <motion.div className={styles.header} variants={headerVariants}>
         <h1>Does this sound familiar...</h1>
       </motion.div>

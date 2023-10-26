@@ -33,3 +33,31 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .vacancy {
+        padding: 2rem;
+        height: 100%;
+        gap: 1.6rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .body {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        padding: 2rem;
+        width: 100%;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.6rem;
+            padding: 2rem;
+            width: 100%;
+        }
+    }
+}

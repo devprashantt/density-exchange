@@ -187,3 +187,38 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .improve {
+        padding: 2rem 1.6rem;
+
+        .header {
+            .content {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .ghost {
+                height: 6rem;
+                width: 6rem;
+            }
+        }
+
+        .timeline {
+            padding: 4rem 0rem 0 1rem;
+
+            .card {
+                max-width: 100%;
+            }
+
+            .card_active {
+                max-width: 100%;
+            }
+        }
+    }
+}

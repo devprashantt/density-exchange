@@ -132,3 +132,69 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .work {
+        padding: 2rem 1.6rem;
+
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1.6rem;
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .img {
+                padding-right: 0;
+            }
+        }
+
+        .body {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.6rem;
+
+            .left {
+                width: 100%;
+                padding: 2rem;
+                gap: 1.6rem;
+
+                .work_img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .about {
+                    padding: 0;
+                }
+
+                .product {
+                    padding: 0;
+                }
+            }
+
+            .right {
+                width: 100%;
+                padding: 2rem;
+                gap: 1.6rem;
+
+                .cards {
+                    padding: 0;
+                    padding-top: 8rem;
+                }
+            }
+        }
+    }
+}
