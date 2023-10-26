@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 
 const Vacancies = () => {
   return (
-    <div className={styles.vacancy}>
+    <section className={styles.vacancy}>
       <h1 className={styles.title}>Open Vacancies</h1>
       <div className={styles.body}>
         {vacancy.map((vacancyItem, index) => (
@@ -24,7 +24,7 @@ const Vacancies = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.content}>
         <p className={styles.tag_line}>Ahead app</p>
         <h1 className={styles.title}>
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className={styles.img}>
         <Image src={images.ahead} alt="hero" />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,4 +1,3 @@
-
 import styles from "./Sounds.module.scss";
 import { motion } from "framer-motion";
 import { Card } from "@/components";
@@ -20,12 +19,7 @@ const Sounds = () => {
   };
 
   return (
-    <motion.div
-      className={styles.sound}
-      initial="initial"
-      animate="animate"
-      variants={parentVariants}
-    >
+    <section className={styles.sounds}>
       <motion.div className={styles.header} variants={headerVariants}>
         <h1>Does this sound familiar...</h1>
       </motion.div>
@@ -43,7 +37,7 @@ const Sounds = () => {
           />
         ))}
       </div>
-    </motion.div>
+    </section>
   );
 };
 

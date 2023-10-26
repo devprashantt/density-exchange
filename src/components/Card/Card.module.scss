@@ -70,6 +70,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.2rem;
+    height: 14rem;
     padding: 2rem;
     border-radius: 1.6rem;
     background-color: #fefbec;
@@ -97,8 +98,24 @@
 
     // ON HOVER SHOW BTN WITH SMOOTH ANIMATION ON WHOLE CARD
     &:hover {
+        background-color: #ffefd5;
+        height: 16rem;
+
+        // SHOW BUTTON ONLY AFTER HEIGHT IS INCREASED
         .btn {
-            display: flex;
+            display: block;
+            animation: show 0.6s ease-in-out;
+        }
+
+        @keyframes show {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     }
+
+    transition: height 0.3s ease-in-out;
 }

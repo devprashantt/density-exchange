@@ -2,7 +2,7 @@ import styles from "./EQBeats.module.scss";
 
 const EQBeats = () => {
   return (
-    <div className={styles.eq}>
+    <section className={styles.eq}>
       <h1 className={styles.title}>EQ Beats IQ</h1>
       <div className={styles.para}>
         People with high emotional intelligence are often referred to as having
@@ -14,7 +14,7 @@ const EQBeats = () => {
         a lot emotional quotient, and it’s a measure of the emotional
         intelligence of an individual.
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,7 +10,7 @@ const Team = () => {
     visible: { scale: 1, transition: { duration: 1 } },
   };
   return (
-    <div className={styles.team}>
+    <section className={styles.team}>
       <p className={styles.sub_heading}>
         Let your friends, family, and co-workers (anonymously) rate your social
         skills.
@@ -57,7 +57,7 @@ const Team = () => {
       <div className={styles.timeline}>
         <Timeline type="team" />
       </div>
-    </div>
+    </section>
   );
 };
 

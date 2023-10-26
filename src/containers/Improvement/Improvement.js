@@ -42,7 +42,7 @@ const Improvement = () => {
   };
 
   return (
-    <div className={styles.improve}>
+    <section className={styles.improve}>
       <div className={styles.header}>
         <motion.div
           className={styles.content}
@@ -98,7 +98,7 @@ const Improvement = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

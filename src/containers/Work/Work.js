@@ -18,7 +18,7 @@ const imageVariants = {
 
 const Work = () => {
   return (
-    <div className={styles.work}>
+    <section className={styles.work}>
       <div className={styles.header}>
         <motion.div
           className={styles.title}
@@ -70,7 +70,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

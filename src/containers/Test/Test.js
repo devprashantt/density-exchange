@@ -19,11 +19,7 @@ const Test = () => {
   };
 
   return (
-    <motion.div
-      className={styles.test}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
+    <section className={styles.test}>
       <p className={styles.para1}>We take privacy seriously</p>
       <h1 className={styles.para2}>Before you get started</h1>
       <p className={styles.para3}>
@@ -37,7 +33,7 @@ const Test = () => {
         <Button text={"Start test"} />
       </motion.div>
       <p className={styles.para5}>Take only 5 minutes</p>
-    </motion.div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <section className={styles.footer}>
       <hr className={styles.border} />
       <div className={styles.logo}>
         <Image src={images.ahead} alt="EQBeats" className={styles.img} />
@@ -23,7 +23,7 @@ const Footer = () => {
       <Image src={images.app_store} alt="app" />
 
       <p>@2023 Prashant Kumar Singh. All rights reserved</p>
-    </footer>
+    </section>
   );
 };
 
