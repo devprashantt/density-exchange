@@ -4,15 +4,38 @@ import { Card } from "@/components";
 import styles from "./Work.module.scss";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const titleVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
+
+const imageVariants = {
+  hidden: { x: 100, opacity: 0 },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
+};
 
 const Work = () => {
   return (
     <div className={styles.work}>
       <div className={styles.header}>
-        <div className={styles.title}>Work with us</div>
-        <div className={styles.img}>
+        <motion.div
+          className={styles.title}
+          initial="hidden"
+          animate="visible"
+          variants={titleVariants}
+        >
+          Work with us
+        </motion.div>
+        <motion.div
+          className={styles.img}
+          initial="hidden"
+          animate="visible"
+          variants={imageVariants}
+        >
           <Image src={images.ahead_text} alt="img" className={styles.ahead} />
-        </div>
+        </motion.div>
       </div>
       <div className={styles.body}>
         <div className={styles.left}>

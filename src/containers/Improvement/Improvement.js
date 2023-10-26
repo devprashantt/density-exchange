@@ -1,37 +1,13 @@
-"use client";
-
 import React, { useRef, useEffect, useState } from "react";
 import styles from "./Improvement.module.scss";
-import { images } from "@/constants";
+import { images, improve } from "@/constants";
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 
 const Improvement = () => {
-  const timelineItems = [
-    {
-      title: "Its not easy as 1-2-3",
-      description:
-        "The journey of change may be longer than the change itself. We get to the point an tell you want to know (and nothing else).",
-    },
-    {
-      title: "Its not easy as 1-2-3",
-      description:
-        "The journey of change may be longer than the change itself. We get to the point an tell you want to know (and nothing else).",
-    },
-    {
-      title: "Its not easy as 1-2-3",
-      description:
-        "The journey of change may be longer than the change itself. We get to the point an tell you want to know (and nothing else).",
-    },
-    {
-      title: "Its not easy as 1-2-3",
-      description:
-        "The journey of change may be longer than the change itself. We get to the point an tell you want to know (and nothing else).",
-    },
-  ];
-
   const [activeDot, setActiveDot] = useState(0);
 
-  // ON SCROLL CHANGE ACTIVE STATE
   const ref = useRef(null);
 
   useEffect(() => {
@@ -55,8 +31,8 @@ const Improvement = () => {
 
   const handleScroll = (event) => {
     const container = event.target;
-    const itemHeight = container.clientHeight / timelineItems.length;
-    const maxActiveDot = timelineItems.length - 1;
+    const itemHeight = container.clientHeight / improve.length;
+    const maxActiveDot = improve.length - 1;
 
     if (event.deltaY > 0 && activeDot < maxActiveDot) {
       setActiveDot(activeDot + 1);
@@ -68,14 +44,43 @@ const Improvement = () => {
   return (
     <div className={styles.improve}>
       <div className={styles.header}>
-        <div className={styles.content}>
+        <motion.div
+          className={styles.content}
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{
+            duration: 1,
+            type: "spring",
+            stiffness: 200,
+            damping: 30,
+          }}
+        >
           <p>Wrong improvement and how we are fixing it.</p>
-          <h1>Self-improvement. Ugh.</h1>
-        </div>
-        <Image src={images.ghost} alt={"ghost"} className={styles.ghost} />
+          <motion.h1
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 200,
+              damping: 30,
+            }}
+          >
+            Self-improvement. Ugh.
+          </motion.h1>
+        </motion.div>
+
+        <motion.div
+          className={styles.ghost}
+          initial={{ x: 1000 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1, type: "tween" }}
+        >
+          <Image src={images.ghost} alt={"ghost"} />
+        </motion.div>
       </div>
       <div className={styles.timeline} ref={ref} onWheel={handleScroll}>
-        {timelineItems.map((item, index) => (
+        {improve?.map((item, index) => (
           <div
             key={index}
             className={

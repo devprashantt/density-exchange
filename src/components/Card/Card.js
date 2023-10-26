@@ -1,5 +1,6 @@
 import styles from "./Card.module.scss";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
 
 const Card = ({
   type,
@@ -45,7 +46,13 @@ const Card = ({
               <li key={index}>{bullet}</li>
             ))}
           </ul>
-          <Button text="See details" customClass={styles.btn} />
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <Button text="See details" customClass={styles.btn} />
+          </motion.div>
         </div>
       );
     default:

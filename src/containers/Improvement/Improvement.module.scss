@@ -40,6 +40,15 @@
 
             top: -1.4rem;
             right: 40%;
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 
@@ -62,7 +71,7 @@
         overflow-y: scroll;
         padding: 8rem 0rem 0 2rem;
 
-        width: 60%;
+        width: 100%;
 
         .card {
             display: flex;
@@ -70,6 +79,8 @@
             justify-content: center;
             gap: 2rem;
             height: 100%;
+            max-width: 60%;
+            cursor: pointer;
 
             .line {
                 display: flex;
@@ -121,6 +132,8 @@
             justify-content: center;
             gap: 2rem;
             height: 100%;
+            max-width: 60%;
+            cursor: pointer;
 
             .line {
                 display: flex;

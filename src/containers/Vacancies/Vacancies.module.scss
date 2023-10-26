@@ -21,5 +21,15 @@
         background-color: #fff;
         border-radius: 1.6rem;
         width: 100%;
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1.6rem;
+            background-color: #fff;
+            border-radius: 1.6rem;
+            width: 100%;
+        }
     }
 }

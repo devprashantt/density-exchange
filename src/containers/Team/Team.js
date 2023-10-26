@@ -5,6 +5,10 @@ import { images } from "@/constants";
 import { motion } from "framer-motion";
 
 const Team = () => {
+  const imageVariants = {
+    hidden: { scale: 0 },
+    visible: { scale: 1, transition: { duration: 1 } },
+  };
   return (
     <div className={styles.team}>
       <p className={styles.sub_heading}>
@@ -14,9 +18,32 @@ const Team = () => {
       <h1 className={styles.heading}>Even wondered what other think of you?</h1>
       <div className={styles.steps}>
         <hr className={styles.line} />
-        <Image src={images.badge_1} alt="badge" className={styles.badge} />
-        <Image src={images.badge_2} alt="badge" className={styles.badge} />
-        <Image src={images.badge_3} alt="badge" className={styles.badge} />
+        <motion.div
+          className={styles.badge}
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <Image src={images.badge_1} alt="badge" className={styles.img} />
+        </motion.div>
+
+        <motion.div
+          className={styles.badge}
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <Image src={images.badge_2} alt="badge" className={styles.img} />
+        </motion.div>
+
+        <motion.div
+          className={styles.badge}
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <Image src={images.badge_3} alt="badge" className={styles.img} />
+        </motion.div>
       </div>
       <div className={styles.steps_content}>
         <p className={styles.text}>Answer question on your social network</p>
