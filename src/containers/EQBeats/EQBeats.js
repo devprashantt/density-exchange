@@ -1,4 +1,5 @@
 import styles from "./EQBeats.module.scss";
+import MotionWrap from "@/utils/MotionWrap";
 
 const EQBeats = () => {
   return (
@@ -18,4 +19,4 @@ const EQBeats = () => {
   );
 };
 
-export default EQBeats;
+export default MotionWrap(EQBeats);

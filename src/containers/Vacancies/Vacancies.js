@@ -1,7 +1,8 @@
 import styles from "./Vacancies.module.scss";
 import { Card } from "@/components";
 import { vacancy } from "@/constants";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
+import MotionWrap from "@/utils/MotionWrap";
 
 const Vacancies = () => {
   return (
@@ -12,8 +13,8 @@ const Vacancies = () => {
           <motion.div
             className={styles.container}
             key={vacancyItem.id}
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            initial={{ y: 0, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <Card
@@ -28,4 +29,4 @@ const Vacancies = () => {
   );
 };
 
-export default Vacancies;
+export default MotionWrap(Vacancies);

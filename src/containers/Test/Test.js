@@ -1,6 +1,7 @@
 import { Button } from "@/components";
 import styles from "./Test.module.scss";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
+import MotionWrap from "@/utils/MotionWrap";
 
 const Test = () => {
   const buttonVariants = {
@@ -37,4 +38,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default MotionWrap(Test);

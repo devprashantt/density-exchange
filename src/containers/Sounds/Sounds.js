@@ -2,6 +2,7 @@ import styles from "./Sounds.module.scss";
 import { motion } from "framer-motion";
 import { Card } from "@/components";
 import { emoji } from "@/constants";
+import MotionWrap from "@/utils/MotionWrap";
 
 const Sounds = () => {
   const parentVariants = {
@@ -46,4 +47,4 @@ const Sounds = () => {
   );
 };
 
-export default Sounds;
+export default MotionWrap(Sounds);

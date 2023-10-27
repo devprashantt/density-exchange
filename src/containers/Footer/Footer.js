@@ -1,6 +1,7 @@
 import { images } from "@/constants";
 import styles from "./Footer.module.scss";
 import Image from "next/image";
+import MotionWrap from "@/utils/MotionWrap";
 
 const Footer = () => {
   return (
@@ -27,4 +28,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MotionWrap(Footer);

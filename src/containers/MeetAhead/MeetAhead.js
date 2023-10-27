@@ -2,6 +2,7 @@ import { images } from "@/constants";
 import styles from "./MeetAhead.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import MotionWrap from "@/utils/MotionWrap";
 
 const MeetAhead = () => {
   const containerVariants = {
@@ -87,4 +88,4 @@ const MeetAhead = () => {
   );
 };
 
-export default MeetAhead;
+export default MotionWrap(MeetAhead);

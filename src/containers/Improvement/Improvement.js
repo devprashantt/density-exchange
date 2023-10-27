@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import styles from "./Improvement.module.scss";
 import { images, improve } from "@/constants";
 import { motion } from "framer-motion";
+import MotionWrap from "@/utils/MotionWrap";
 
 import Image from "next/image";
 
@@ -102,4 +103,4 @@ const Improvement = () => {
   );
 };
 
-export default Improvement;
+export default MotionWrap(Improvement);

@@ -2,6 +2,7 @@ import { images } from "@/constants";
 import styles from "./Hero.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import MotionWrap from "@/utils/MotionWrap";
 
 const Hero = () => {
   return (
@@ -59,4 +60,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default MotionWrap(Hero);

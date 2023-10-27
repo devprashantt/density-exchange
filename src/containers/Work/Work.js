@@ -5,16 +5,7 @@ import styles from "./Work.module.scss";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const titleVariants = {
-  hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
-};
-
-const imageVariants = {
-  hidden: { x: 100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
-};
+import MotionWrap from "@/utils/MotionWrap";
 
 const Work = () => {
   return (
@@ -22,17 +13,28 @@ const Work = () => {
       <div className={styles.header}>
         <motion.div
           className={styles.title}
-          initial="hidden"
-          animate="visible"
-          variants={titleVariants}
+          initial={{ x: -100, y: 0, opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          animate={{
+            x: 0,
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1 },
+          }}
         >
           Work with us
         </motion.div>
         <motion.div
           className={styles.img}
-          initial="hidden"
-          animate="visible"
-          variants={imageVariants}
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 1 },
+          }}
         >
           <Image src={images.ahead_text} alt="img" className={styles.ahead} />
         </motion.div>
@@ -74,4 +76,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default MotionWrap(Work);
