@@ -65,7 +65,7 @@ const MeetAhead = () => {
       </div>
       {/* SHAPES */}
       <motion.div className={styles.img}>
-        <Image src={images.ghost} alt="ghost" className={styles.ghost} />
+        <Image src={images.icon_2} alt="ghost" className={styles.ghost} />
       </motion.div>
       <motion.div
         className={styles.circle1}

@@ -39,7 +39,7 @@ const Work = () => {
       </div>
       <div className={styles.body}>
         <div className={styles.left}>
-          <Image src={images.ghost} alt="img" className={styles.work_img} />
+          <Image src={images.icon_2} alt="img" className={styles.work_img} />
           <div className={styles.about}>
             <h1>About</h1>
             <p>

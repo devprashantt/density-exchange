@@ -76,7 +76,7 @@ const Improvement = () => {
           animate={{ x: 0 }}
           transition={{ duration: 1, type: "tween" }}
         >
-          <Image src={images.ghost} alt={"ghost"} />
+          <Image src={images.icon_2} alt={"ghost"} />
         </motion.div>
       </div>
       <div className={styles.timeline} ref={ref} onWheel={handleScroll}>
