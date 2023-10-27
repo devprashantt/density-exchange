@@ -5,11 +5,6 @@ import { emoji } from "@/constants";
 import MotionWrap from "@/utils/MotionWrap";
 
 const Sounds = () => {
-  const parentVariants = {
-    initial: { x: "100%" },
-    animate: { x: 0, transition: { type: "spring", stiffness: 80 } },
-  };
-
   const headerVariants = {
     initial: { x: -50, opacity: 0 },
     animate: {
@@ -20,16 +15,18 @@ const Sounds = () => {
   };
 
   return (
-    <motion.div
-      className={styles.sound}
-      initial="initial"
-      animate="animate"
-      variants={parentVariants}
-    >
+    <div className={styles.sound}>
       <motion.div className={styles.header} variants={headerVariants}>
         <h1>Does this sound familiar...</h1>
       </motion.div>
-      <div className={styles.cards}>
+      <motion.div
+        className={styles.cards}
+        whileInView={{
+          x: [0, 100, 0],
+          opacity: [0, 0, 1],
+          transition: { type: "spring", stiffness: 80 },
+        }}
+      >
         {emoji.map((item, index) => (
           <Card
             key={index}
@@ -42,8 +39,8 @@ const Sounds = () => {
             text={item.text}
           />
         ))}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

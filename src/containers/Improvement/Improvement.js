@@ -82,11 +82,20 @@ const Improvement = () => {
       </div>
       <div className={styles.timeline} ref={ref} onWheel={handleScroll}>
         {improve?.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className={
               activeDot === index ? `${styles.card_active}` : styles.card
             }
+            initial={{ x: -1000 }}
+            animate={{ x: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 200,
+              damping: 30,
+            }}
+            whileInView={{ x: 0, opacity: 1 }}
             onClick={() => setActiveDot(index)}
           >
             <div className={styles.line}>
@@ -96,7 +105,7 @@ const Improvement = () => {
               <h2>{item.title}</h2>
               <p>{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -8,7 +8,14 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <p className={styles.tag_line}>Ahead app</p>
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className={styles.tag_line}
+        >
+          Ahead app
+        </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -18,12 +25,24 @@ const Hero = () => {
           Master your life <br /> by mastering <br /> emotions
         </motion.h1>
         <div className={styles.action}>
-          <Image src={images.app_store} alt="app" />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className={styles.img}
+          >
+            <Image src={images.app_store} alt="app" />
+          </motion.div>
 
-          <div className={styles.ratings}>
+          <motion.div
+            className={styles.ratings}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div className={styles.stars}>⭐⭐⭐⭐</div>
             <p className={styles.sub_title}>100+ App store reviews</p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className={styles.img}>
@@ -60,4 +79,4 @@ const Hero = () => {
   );
 };
 
-export default MotionWrap(Hero);
+export default Hero;
