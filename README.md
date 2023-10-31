@@ -78,7 +78,4 @@ If you have any questions or need further information, please feel free to conta
 Thank you for considering my application. I look forward to your feedback and evaluation.
 
 Best regards,
-[Your Name]
-```
-
-This README.md provides a clear overview of your project, its features, the tech stack used, project structure, how to get started, deployment information, evaluation criteria, and your contact information. You can customize it with your specific details and the actual deployment URL.
+Prashant Kumar Singh
